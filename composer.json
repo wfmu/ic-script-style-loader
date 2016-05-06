@@ -1,0 +1,9 @@
+{
+  "name": "wfmu/ic-script-style-loader",
+  "type": "wordpress-plugin",
+  "version": "master",
+  "dist": {
+    "url": "git@github.com:wfmu/ic-script-style-loader.git",
+    "type": "git"
+  }
+}
