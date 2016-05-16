@@ -28,9 +28,14 @@
 
 		public function load_styles_scripts(){
 			
-            $site_url = str_replace("http:","",site_url()); 
+			$site_url_wp = str_replace("wp", "", site_url()); 
+            $site_url = str_replace("http:", "", $site_url_wp); 
+
             $theme_name = wp_get_theme();
-            $full_path = $site_url . "/wp-content/themes/" . $theme_name;
+
+            $full_path = $site_url . "/app/themes/" . $theme_name;
+
+
             // $full_path = get_stylesheet_directory_uri();
 
 			if(!is_admin()){
